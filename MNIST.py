@@ -48,3 +48,4 @@ class MNIST():
         print ('{} and {}'.format(trials_X.shape, trials_y.shape)) # All 20 * 5 trials comprising of 5 folds per trial
         
         return trials_X, trials_y
+    
