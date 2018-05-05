@@ -39,8 +39,8 @@ class MNIST():
         trials_y = []
         
         for i in range(folds):
-            trials_X.append(complete_trial_X)
-            trials_y.append(complete_trial_y)
+            trials_X.append(complete_trial_X) # Appending 5 folds per trial for 5 trials for 20 kNN models
+            trials_y.append(complete_trial_y) # Appending 5 folds per trial for 5 trials for 20 kNN models
         
         trials_X = np.array(trials_X) # Complete set of 5 trials per model for all 20 kNN models
         trials_y = np.array(trials_y) # Complete set of 5 trials per model for all 20 kNN models
