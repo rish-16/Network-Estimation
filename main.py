@@ -15,7 +15,7 @@ from benchmark import load_mnist, load_model_CNN, train_model
 xtrain, ytrain, xtest, ytest = load_mnist()
 model = load_model_CNN()
 trained_model, model_dict = train_model(model, xtrain, ytrain, xtest, ytest)
-print (model_dict['acc'])
+print (model_dict)
 
 y_hat_train = trained_model.predict(xtrain)
 y_hat_test = trained_model.predict(xtest)

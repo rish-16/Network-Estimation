@@ -62,7 +62,7 @@ class PMNIST():
             
             # Per trial analysis
             x_test_fold = current_trial_batch_X[test_index_X] # Test set X for each trial
-            y_test_fold = current_trial_batch_y[test_index_y] # Test set y for each trial
+            y_test_fold = current_trial_batch_y[test_index_y] # Test set y for each trial   
             print ('Testing batch: {} | {}'.format(x_test_fold.shape, y_test_fold.shape))
             
             x_train_folds = np.delete(current_trial_batch_X, test_index_X, 0) # The current trial batch without the test fold
